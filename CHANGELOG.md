@@ -1,6 +1,44 @@
-# master
+# [master][]
+
+* Your contribution here!
+
+# [1.4.0][] (Jun 2 2018)
+
+* Added option ':assets_manifests' to support custom manifest file path ([#216](https://github.com/capistrano/rails/pull/216))
+
+# [1.3.1][] (Nov 21 2017)
+
+This release simply adds the MIT license to the capistrano-rails gemspec. There are no code changes. See [#205](https://github.com/capistrano/rails/issues/205).
+
+# [1.3.0][] (Jun 9 2017)
+
+* rails_assets_groups config option to set RAILS_GROUPS (https://github.com/capistrano/rails/pull/135)
+
+# [1.2.3][] (Mar 4 2017)
+
+* [#200](https://github.com/capistrano/rails/pull/200): Don't link public/assets if public is already linked - [@mattbrictson](https://github.com/mattbrictson)
+
+# [1.2.2][] (Jan 10 2017)
+
+* Restored compatibility with older versions of Rake (< 11.0.0), introduced in previous change. (@toupeira)
+
+# [1.2.1][] (Dec 23 2016)
+
+* Diff db directory recursively
+* Avoid warning while running migrations on multiple servers (#189)
+
+# [1.2.0][] (Oct 25 2016)
+
+* Diff entire db directory when determining if migrations are needed
+
+# 1.1.8 (Sep 13 2016)
+
+* Handle arrays passed into `normalize_asset_timestamps` correctly (#184)
+
+# 1.1.7 (Jun 10 2016)
 
 * call `Array#uniq` in `deploy:set_linked_dirs` task to remove duplicated :linked_dirs
+* Add `migration_servers` configuration (#168)
 
 # 1.1.6 (Jan 19 2016)
 
@@ -46,3 +84,12 @@
 # 1.0.0
 
 Initial release
+
+[master]: https://github.com/capistrano/rails/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/capistrano/rails/compare/v1.3.1...v1.4.0
+[1.3.1]: https://github.com/capistrano/rails/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/capistrano/rails/compare/v1.2.3...v1.3.0
+[1.2.3]: https://github.com/capistrano/rails/compare/v1.2.2...v1.2.3
+[1.2.2]: https://github.com/capistrano/rails/compare/v1.2.1...v1.2.2
+[1.2.1]: https://github.com/capistrano/rails/compare/v1.2.0...v1.2.1
+[1.2.0]: https://github.com/capistrano/rails/compare/v1.1.8...v1.2.0
